@@ -1,53 +1,80 @@
-# rna-transcription
+# RNA Transcription
 
-A simple Java applicaiton determines and returns the RNA complement (as a String) of a given DNA sequence entered (as a String).
+A simple Java application that determines and returns the RNA complement (as a String) of a given DNA sequence entered (as a String).
 
-# About the project
+## About the project
 
-This rna-transcription is a simple Java program created to practice and improve on my programming and problem solving skills. This is not a program which solves a real-world problem, for now ;).
+This project is based on the “RNA Transcription” exercise from Exercism (Java track). It represents my own implementation of the problem. The exercise can be found here: https://exercism.org/tracks/java/exercises/rna-transcription
 
-This is a project inspired 100% on a java exercise found on exercism.org with the name RNA Transcription. This project is my implementation of this exercise. The exercise can be found here: https://exercism.org/tracks/java/exercises/rna-transcription
+The program demonstrates how a DNA strand can be transcribed into its RNA complement by replacing each nucleotide with its corresponding pair.
 
-The program's purpose is to Here's part of the exercise instruction which justifies the purpose of the program (creating a very specific molecule called a micro-RNA, from a DNA strand, which prevents the excessive production of a given protein):
+DNA nucleotides: A, C, G, T
+RNA nucleotides: A, C, G, U
 
-Both DNA and RNA strands are a sequence of nucleotides.
+Transcription rules:
 
-The four nucleotides found in DNA are adenine (A), cytosine (C), guanine (G), and thymine (T).
+- G → C
 
-The four nucleotides found in RNA are adenine (A), cytosine (C), guanine (G), and uracil (U).
+- C → G
 
-Given a DNA strand, its transcribed RNA strand is formed by replacing each nucleotide with its complement:
+- T → A
 
-G -> C
-C -> G
-T -> A
-A -> U
+- A → U
 
-# Built with
+The program applies these rules to generate the RNA sequence from a given DNA string.
+
+## Built with
 
 - Java 17
 - IntelliJ IDEA
 
-# Getting started
+## Getting started
 
-## Prerequisites
+### Prerequisites
 
 - Java 17 or later
 
-## Getting the project 
+### Getting the project 
 
 1. Clone the repository
 2. Or download it as a ZIP
 
-## Running the project
+### Running the project
 
 1. Open the project in IntelliJ IDEA or any IDE
-2. Locate Main.Java
+2. Locate Main.java
 3. Click the Run button
 
-or if you use the terminal
+or if you use the terminal:
 
 ```bash
 javac Main.java
 java Main
+```
 
+Note: This assumes Main.java is in the project root and uses no packages.
+
+## Usage
+
+The program applies RNA transcription rules to a DNA strand defined in the source code and generates the corresponding RNA strand. It then prints both the original DNA nucleotide sequence and the transcribed RNA nucleotide sequence.
+
+
+
+### Example
+
+When the DNA sequence 'CCTAGT' is processed, the program outputs:
+
+```
+            DNA strand: CCTAGT
+Transcribed RNA strand: GGAUCA
+```
+
+
+## Learning goals
+
+This project is a small Java program created to practice core programming and problem-solving skills. This project focuses on core logic and string manipulation rather than user input or error handling. The project is intended as a learning exercise rather than a production-ready application.
+
+
+## Feedback
+
+Open to suggestions and improvements.
